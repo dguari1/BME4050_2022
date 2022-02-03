@@ -1,0 +1,60 @@
+def my_function(input_str):
+    """
+    Function that identifies if a string has at least one number
+    """
+    assert type(input_str) == str, "The input must be a string"
+    
+    is_digit = False
+    
+    for c in input_str:
+        print(c)
+        if c.isdigit():
+            is_digit =  True 
+        
+    return is_digit
+
+print(my_function('h1la'))
+#print(my_function('1hola2'))
+
+--
+
+def my_function(input_str):
+    """
+    Function that sums the numbers in a string
+    """
+    assert type(input_str) == str, "The input must be a string"
+    
+    s = 0 
+    
+    for c in input_str:
+        print(c)
+        if c.isdigit():
+            
+            s += int(c) # s = s+int(c)
+            
+            
+    return s
+
+print(my_function('1hola2')) 
+#print(my_function('1hola2'))
+
+--
+
+def my_function(input_str):
+    """
+    Function that removes numbers from string
+    """
+    assert type(input_str) == str, "The input must be a string"
+    
+    s = ''
+    
+    for c in input_str:
+        if c.isdigit():
+            pass
+        else:
+            s += c # s = s + c            
+            
+    return s
+
+print(my_function('1352')) 
+#print(my_function('1hola2'))
